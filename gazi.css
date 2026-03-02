@@ -1,0 +1,13 @@
+/* styles.css */
+body {
+    background-color: #5D4037; /* Темно-коричневий дерев'яний */
+    color: #F5DEB3; /* Бежевий/золотистий текст */
+}
+
+.wood-bg { background-color: #8B4513; } /* SaddleBrown */
+.accent-bg { background-color: #A0522D; } /* Sienna */
+
+.logo-text {
+    font-family: 'Georgia', serif;
+    letter-spacing: 2px;
+}

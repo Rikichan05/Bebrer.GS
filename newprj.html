@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sallon Berberi Gazi Sina</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="gazi.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="min-h-screen font-sans antialiased">
+
+    <!-- Навігація з логотипом -->
+    <nav class="fixed top-0 left-0 right-0 wood-bg shadow-lg z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
+            <div class="flex items-center space-x-3">
+                <i class="fas fa-cut text-3xl text-amber-400"></i>
+                <span class="text-3xl font-bold logo-text">Berber GS</span>
+            </div>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#home" class="hover:text-amber-300 transition">Kryefaqja</a>
+                <a href="#about" class="hover:text-amber-300 transition">Rreth Nesh</a>
+                <a href="#gallery" class="hover:text-amber-300 transition">Galeria</a>
+                <a href="#services" class="hover:text-amber-300 transition">Shërbimet</a>
+                <a href="#contact" class="hover:text-amber-300 transition">Kontakti</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero з відео (безкоштовне стокове з Pexels) -->
+    <section id="home" class="min-h-screen flex flex-col justify-center items-center wood-bg pt-20">
+        <div class="w-full max-w-6xl px-4 mb-12">
+            <div class="aspect-w-16 aspect-h-9 rounded-2xl overflow-hidden shadow-2xl border-4 border-amber-800">
+                <video controls autoplay muted loop playsinline class="w-full h-full object-cover">
+                    <source src="images/New York barber shop.mp4" type="video/mp4">
+                    Browser juaj nuk e mbështet videon.
+                </video>
+            </div>
+        </div>
+        <div class="text-center px-4">
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 logo-text">Mirë se vini te Berber Gazi</h1>
+            <p class="text-2xl md:text-3xl mb-10">Berberi premium me ambient druri dhe shërbim mashkullor elegant.</p>
+            <a href="#contact" class="bg-amber-700 hover:bg-amber-800 text-white font-bold py-5 px-12 rounded-xl text-xl transition shadow-2xl">Rezervo Tani</a>
+        </div>
+    </section>
+
+    <!-- About з фото салону -->
+    <section id="about" class="py-24 accent-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-5xl font-bold text-center mb-16 logo-text">Rreth Nesh</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6 text-lg">
+                    <p>Berberi GS është sallon berberi premium në Lushnje, ku çdo detaj është menduar për meshkujt modernë që vlerësojnë cilësinë dhe stilin.</p>
+                    <p>Ambient i ngrohtë me dru natyral, aroma e pastrimit klasik dhe berberë me përvojë — kjo është përvoja jonë.</p>
+                </div>
+                <img src="images/grok-image-238295ff-4b17-42e2-8153-117519ee8079 (1).png" alt="Interior druri Gazi Sina" class="rounded-2xl shadow-2xl border-4 border-amber-800 object-cover h-96 w-full">
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery – 3–4 фото для наповнення -->
+    <section id="gallery" class="py-24 wood-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-5xl font-bold text-center mb-16 logo-text">Galeria</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <img src="images/barber-scissors-straight-razor-barber-shop_926199-2066650.avif" alt="Karrige berberi druri" class="rounded-2xl shadow-xl object-cover h-80 w-full hover:scale-105 transition duration-300">
+                <img src="images/grok-image-238295ff-4b17-42e2-8153-117519ee8079.png" alt="Ambient me dru dhe pasqyrë" class="rounded-2xl shadow-xl object-cover h-80 w-full hover:scale-105 transition duration-300">
+                <img src="images/barber-shop-logo-scissors-amp-pole-vector-35948445.avif" alt="Berber në punë" class="rounded-2xl shadow-xl object-cover h-80 w-full hover:scale-105 transition duration-300">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="py-24 accent-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-5xl font-bold text-center mb-16 logo-text">Shërbimet Tona</h2>
+            <div class="grid md:grid-cols-3 gap-10">
+                <div class="bg-amber-900 p-10 rounded-2xl shadow-2xl text-center hover:bg-amber-800 transition">
+                    <h3 class="text-3xl font-bold mb-6">Prerje Flokësh</h3>
+                    <p class="text-lg mb-6">Stilizim modern, fade, classic cut — sipas dëshirës suaj.</p>
+                    <span class="text-4xl font-extrabold">500 Lekë</span>
+                </div>
+                <div class="bg-amber-900 p-10 rounded-2xl shadow-2xl text-center hover:bg-amber-800 transition">
+                    <h3 class="text-3xl font-bold mb-6">Kujdes Mjekre</h3>
+                    <p class="text-lg mb-6">Trim, shape, vajra natyralë dhe masazh.</p>
+                    <span class="text-4xl font-extrabold">500 Lekë</span>
+                </div>
+                <div class="bg-amber-900 p-10 rounded-2xl shadow-2xl text-center hover:bg-amber-800 transition">
+                    <h3 class="text-3xl font-bold mb-6">Rruajtje Klasike</h3>
+                    <p class="text-lg mb-6">Me thikë të nxehtë, peshqir të ngrohtë dhe kujdes për lëkurën.</p>
+                    <span class="text-4xl font-extrabold">500 Lekë</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-24 wood-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-5xl font-bold text-center mb-16 logo-text">Na Kontaktoni & Rezervoni</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="space-y-8 text-lg">
+                    <p><i class="fas fa-map-marker-alt text-2xl mr-4 text-amber-400"></i>Rruga qemal stafa, Lushnjë 0355</p>
+                    <p><i class="fas fa-phone text-2xl mr-4 text-amber-400"></i>+355 069 774 9477</p>
+                    <p><i class="fas fa-envelope text-2xl mr-4 text-amber-400"></i>info@gazisina.al</p>
+                    <p><i class="fas fa-clock text-2xl mr-4 text-amber-400"></i>E Marte – E Djel: 09:00 – 20:30</p>
+                </div>
+                <form class="bg-amber-900 p-10 rounded-2xl shadow-2xl space-y-6">
+                    <input type="text" placeholder="Emri juaj" class="w-full p-4 rounded-lg bg-amber-800 border border-amber-700 focus:outline-none focus:border-amber-400 text-white">
+                    <input type="tel" placeholder="Numër telefoni" class="w-full p-4 rounded-lg bg-amber-800 border border-amber-700 focus:outline-none focus:border-amber-400 text-white">
+                    <input type="text" placeholder="Data dhe ora e dëshiruar" class="w-full p-4 rounded-lg bg-amber-800 border border-amber-700 focus:outline-none focus:border-amber-400 text-white">
+                    <textarea placeholder="Shënim shtesë" rows="4" class="w-full p-4 rounded-lg bg-amber-800 border border-amber-700 focus:outline-none focus:border-amber-400 text-white"></textarea>
+                    <button type="submit" class="bg-amber-600 hover:bg-amber-700 text-white font-bold py-4 px-8 rounded-lg w-full text-xl transition">Dërgo Rezervimin</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="wood-bg py-8 text-center border-t border-amber-800">
+        <p class="text-lg">© 2026 GS – "We are near of police station in front of sabor caffe."</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
